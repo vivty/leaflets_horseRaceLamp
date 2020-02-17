@@ -1,0 +1,105 @@
+.leaflet-right {
+    right: 0;
+    width: 50%;
+}
+#controlbox1
+{
+    position: absolute;
+    left: 0px;
+    margin: 16px;
+    top: 0px;
+    transition: left 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    transition-property: -webkit-transform,transform,visibility,opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.0,0.0,0.2,1);
+    display: flex;
+}
+#controlcontainer {
+    top: 0;
+    position: absolute;
+    z-index: 4;
+    margin: 0!important;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+#racecontainer {
+    top: 10px;
+    position: absolute;
+    z-index: 4;
+    margin: 0px !important;
+    bottom: 0;
+    height: 70%;
+    right: 75px;
+    width: 85%;
+}
+
+.race
+{
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 40px;
+    border-bottom: 1px solid transparent;
+    padding: 3px 10px 5px;
+    transition-property: background,box-shadow;
+    transition-duration: .3s;
+}
+.race-shadow
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+
+}
+.LampStyle{
+   width: 300px;
+}
+
+.lamp {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 -1px 0 rgba(0,0,0,.02);
+}
+.lamp span { 
+    font-size: 14px;
+    color: red;
+ }
+
+.lampimg{ 
+    position: absolute;
+    top: 24%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 20px 20px 0px 0px;
+    margin: 50 auto;
+    animation: mymove 0.5s infinite;
+ }
+ @keyframes mymove
+	{
+		from {
+		 box-shadow: 0 0 0px rgb(255,0,0);
+		 background-color: black;
+		}
+		to {
+		 box-shadow: 0 0 20px rgb(255,0,0);
+		 background-color: red;
+		}
+	}
+@-webkit-keyframes mymove
+	{
+		from {
+		 box-shadow: 0 0 0px rgb(255,0,0);
+		 background-color: black;
+		}
+		to {
+		 box-shadow: 0 0 20px rgb(255,0,0);
+		 background-color: red;
+		}
+	}
+
+ 
