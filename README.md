@@ -1,6 +1,7 @@
 # leaflets_horseRaceLamp
 Running lights on the leaflets map
 
+前提要引入leaflets.js
 ### 第一步： 引入
      <script src="../components/horseRaceLamp.js"></script>
      <link rel="stylesheet" href="../components/raceLamp.css">
